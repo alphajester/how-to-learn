@@ -54,6 +54,7 @@
 
 .feynman__subtitle, .feynman__link {
   line-height: 51px;
+  font-size: 36px;
 }
 
 .footer__column-heading, .footer__column-link {
@@ -72,10 +73,6 @@
 
 .section-title {
   font-size: 60px;
-}
-
-.feynman__subtitle, .feynman__link {
-  font-size: 36px;
 }
 
 /* links */
@@ -290,7 +287,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;;
+  z-index: -1;
 }
 
 /* kaufman */
