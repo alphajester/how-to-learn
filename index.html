@@ -19,7 +19,7 @@
 
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a href="#" class="header__link">Узнать</a>
+        <a href="#main" class="header__link">Узнать</a>
       </p>
 
       <img
@@ -31,7 +31,7 @@
       <div class="header__square-pic"></div>
     </header>
 
-    <main class="content">
+    <main class="content" id="main">
       <section class="description">
         <div class="two-columns">
           
@@ -107,8 +107,12 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-<!-- внимание: отсебятина; (!)найти как открывать на новой вкладке -->
-        <a href="https://habr.com/ru/post/405517/" class="feynman__link">Подробнее</a>
+
+        <a class="feynman__link"
+          href="https://habr.com/ru/post/405517/"
+          target="_blank"
+          >Подробнее
+        </a>
 
         <img
           src="images/feynman.png"
@@ -182,10 +186,18 @@
       <div class="footer__columns">
         
         <div class="footer__column footer__column_content_copyright">
-          <a href="#" class="logo logo_place_footer"></a>
+          <a class="logo logo_place_footer"
+            href="https://practicum.yandex.ru/web/"
+            target="_blank">
+            <!-- профильный курс, ссылка на мой взгляд более чем логична -->
+          </a>
 
-          <a href="#" class="footer__author">&copy; 2022, Олег Булатников</a>
-          <!-- ссылка не выделена, для тех кто найдёт тут будет мой гит -->
+          <a class="footer__author"
+            href="https://github.com/alphajester/how-to-learn"
+            target="_blank"
+            >&copy; 2022, Олег Булатников
+          <!-- ссылка не выделена цветом, для тех кто найдёт тут будет мой гит -->
+          </a>
         </div>
 
         <nav class="footer__column footer__column_content_info">
@@ -194,15 +206,26 @@
           <ul class="footer__column-links">
             
             <li>
-              <a href="#" class="footer__column-link">Главная</a>
+              <a class="footer__column-link"
+                href="https://practicum.yandex.ru/"
+                target="_blank"
+              >Главная
+              </a>
             </li>
 
             <li>
-              <a href="#" class="footer__column-link">Концепции</a>
+              <a class="footer__column-link"
+                href="https://practicum.yandex.ru/#another-way-to-learn-section"
+                target="_blank"
+              >Концепции
+            </a>
             </li>
 
             <li>
-              <a href="#" class="footer__column-link">Наставники</a>
+              <a class="footer__column-link"
+                href="https://practicum.yandex.ru/promo/mentors-school"
+                target="_blank"
+              >Наставники</a>
             </li>
 
           </ul>
@@ -214,21 +237,27 @@
           <ul class="footer__column-links">
             
             <li>
-              <a href="#" class="footer__column-link">
+              <a class="footer__column-link"
+                href="https://vk.com/yandex.praktikum"
+                target="_blank">
                 <div class="footer__social-icon footer__social-icon_of_vk"></div>
                 ВКонтакте
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer__column-link">
+              <a class="footer__column-link"
+                href="https://http.cat/400"
+                target="_blank">
                 <div class="footer__social-icon footer__social-icon_of_inst"></div>
                 Instagram
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer__column-link">
+              <a class="footer__column-link"
+                href="https://http.cat/403"
+                target="_blank">
                 <div class="footer__social-icon footer__social-icon_of_fb"></div>
                 Facebook
               </a>
