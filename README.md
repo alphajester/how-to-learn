@@ -4,4 +4,4 @@
 
 .всем мир
 
-alphajester.github.io/how-to-learn/
+[релиз онлайн](alphajester.github.io/how-to-learn/ "нажми")
