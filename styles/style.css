@@ -1,12 +1,4 @@
-/* (!!) — means I (probly) need to fulfill some commons, reusables etc. to be beautiful */
-/* (!) — stands for 'improve this' */
-
-/* some written in english 'cause i want to use only one language as we're all understand it's way too comfortable */
-/* by now русский язык использую как пояснения, однако структурно гораздо понятнее и лаконичнее строится мысль на наиболее юзабельном языке
-так что я продолжу использовать английский как naming-tool для описания, так как он препятствует неточностям
-и надеюсь получить здесь фидбэк если так делать не надо/не принято */
-
-/* reset */
+/* styles reset */
 
 .header__title, .header__subtitle,
 .two-columns__brief, .two-columns__paragraph,
@@ -17,7 +9,6 @@
   margin: 0;
   padding: 0;
 }
-/* теперь в макете будут только те отступы, которые мы сами добавим */
 
 /* colorway */
 
@@ -89,8 +80,6 @@
   text-decoration: none;
 }
 
-/* такая группировка чаще может быть излишней, ведь она не так длинна но вниз код таки удлинняет, причём x4-x10
-однако здесь будет удобно видно псевдоклассы и псевдоэлементы */
 
 .header__link:hover,
 .feynman__link:hover,
@@ -124,6 +113,10 @@
 
 .section-title, .table__heading, .table__text {
   margin-bottom: 20px;
+}
+
+.table__text:last-of-type {
+  margin-bottom: 0;
 }
 
 .table {
@@ -265,7 +258,7 @@
 /* feynman */
 
 .feynman {
-  min-height: 790px;
+  min-height: 890px;
   padding-top: 100px;
   position: relative;
   z-index: 0;
@@ -324,6 +317,7 @@
   right: -210px;
   z-index: -1;
   overflow: hidden;
+  background-size: contain;
   background-image: url('../images/kaufman-triangle.svg');
 }
 
@@ -381,16 +375,4 @@
   margin-right: 10px;
   background-repeat: no-repeat;
   display: inline-block;
-}
-
-.footer__social-icon_of_vk {
-  background-image: url('../images/vk_color_white.svg');
-}
-
-.footer__social-icon_of_inst {
-  background-image: url('../images/instagram_color_white.svg');
-}
-
-.footer__social-icon_of_fb {
-  background-image: url('../images/facebook_color_white.svg');
 }
