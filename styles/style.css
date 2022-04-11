@@ -1,3 +1,7 @@
+@import url('../blocks/header/__main-illustration/header__main-illustration.css');
+@import url('../blocks/header/__square-pic/header__square-pic.css');
+@import url('../blocks/rotation/rotation.css');
+
 /* styles reset */
 
 .header__title, .header__subtitle,
@@ -137,7 +141,7 @@
 
 /* sections common flex */
 
-.description, .digits, .kaufman, .footer {
+.description, .digits, .kaufman, .footer, .resources {
   display: flex;
   justify-content: center;
 }
@@ -188,24 +192,7 @@
   left: 64px;
 }
 
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
 
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  right: 0;
-  top: 64px;
-  z-index: -2;
-}
 
 /* main */
 /* description */
@@ -320,6 +307,30 @@
   overflow: hidden;
   background-size: contain;
   background-image: url('../images/kaufman-triangle.svg');
+  animation: rotation 20s linear infinite;
+}
+
+/* resources */
+
+.resources {
+  margin-top: 100px;
+  margin-bottom: 217px;
+  flex-direction: column;
+}
+
+.resources__logo-zone {
+  display: flex;
+  width: 1100px;
+  height: auto;
+  justify-self: auto;
+  /* align-self: center; */
+  margin: auto;
+  padding-top: 80px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 
 /* footer */
