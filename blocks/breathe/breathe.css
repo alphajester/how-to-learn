@@ -1,0 +1,10 @@
+.header__link, .feynman__link, .khan__buy-link, .resources__link, .footer__column-link, .footer__author {
+  text-decoration: none;
+  opacity: .5;
+  transition: opacity 1s ease;
+}
+
+.header__link:hover, .feynman__link:hover, .khan__buy-link:hover,
+.resources__link:hover, .footer__column-link:hover, .footer__author:hover {
+  opacity: .9;
+}
