@@ -8,10 +8,6 @@
   color: #2f80ed;
 }
 
-.khan__buy-link:hover {
-  text-decoration: underline;
-}
-
 .khan__buy-link::after {
   content: ' \2192';
 }
