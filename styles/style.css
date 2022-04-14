@@ -1,6 +1,42 @@
+@import url('../vendor/normalize.css');
+
+@import url('../blocks/logo/logo.css');
+@import url('../blocks/logo/_place/logo_place_header.css');
+@import url('../blocks/logo/_place/logo_place_footer.css');
+
+@import url('../blocks/header/header.css');
 @import url('../blocks/header/__main-illustration/header__main-illustration.css');
 @import url('../blocks/header/__square-pic/header__square-pic.css');
+
+@import url('../blocks/techniques/techniques.css');
+@import url('../blocks/cards/cards.css');
+@import url('../blocks/cards/__item/cards__item.css');
+@import url('../blocks/cards/__image/cards__image.css');
+@import url('../blocks/cards/__title/cards__title.css');
+@import url('../blocks/cards/__description/cards__description.css');
+
+@import url('../blocks/video/video.css');
+@import url('../blocks/video/__iframes/video__iframes.css');
+@import url('../blocks/video/__iframe/video__iframe.css');
+
+@import url('../blocks/oakley/oakley.css');
+
+@import url('../blocks/resources/__link/resources__link.css');
+
+@import url('../blocks/khan/khan.css');
+@import url('../blocks/khan/__container/khan__container.css');
+@import url('../blocks/khan/__author/khan__author.css');
+@import url('../blocks/khan/__title/khan__title.css');
+@import url('../blocks/khan/__quote/khan__quote.css');
+@import url('../blocks/khan/__quote-author/khan__quote-author.css');
+@import url('../blocks/khan/__quote-author-subline/khan__quote-author-subline.css');
+@import url('../blocks/khan/__book-container/khan__book-container.css');
+@import url('../blocks/khan/__book-pic/khan__book-pic.css');
+@import url('../blocks/khan/__buy-link/khan__buy-link.css');
+
 @import url('../blocks/rotation/rotation.css');
+
+
 
 /* styles reset */
 
@@ -16,7 +52,7 @@
 
 /* colorway */
 
-.header, .feynman {
+.feynman {
   background-color: #f2f2f2;
 }
 
@@ -92,10 +128,6 @@
   text-decoration: underline;
 }
 
-.header__link:hover::before {
-  content: none;
-}
-
 .header__link::after,
 .feynman__link::after {
   content: ' \2192';
@@ -103,11 +135,6 @@
 
 /* reusable */
 
-.logo {
-  min-width: 183px;
-  min-height: 32px;
-  background-repeat: no-repeat;
-}
 
 .section-title, .section-subtitle {
   width: 60%;
@@ -141,7 +168,8 @@
 
 /* sections common flex */
 
-.description, .digits, .kaufman, .footer, .resources {
+.description, .digits, .kaufman, .footer,
+.resources {
   display: flex;
   justify-content: center;
 }
@@ -158,22 +186,7 @@
 /* body */
 /* header */ 
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  display: flex;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
 
-.logo_place_header {
-  background-image: url('../images/logo_place_header.svg');
-  position: absolute;
-  top: 30px;
-  left: 64px;
-}
 
 .header__title {
   height: fit-content;
@@ -234,12 +247,16 @@
   margin-bottom: 0;
 }
 
+.digits {
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* digits */
 
 .digits {
-  padding: 100px 0;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 100px;
 }
 
 /* feynman */
@@ -322,16 +339,16 @@
   display: flex;
   width: 1100px;
   height: auto;
-  justify-self: auto;
-  /* align-self: center; */
   margin: auto;
   padding-top: 80px;
+  justify-content: space-between;
 }
 
 .resources__logo {
   width: 270px;
   height: 38px;
 }
+
 
 /* footer */
 
@@ -354,11 +371,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.logo_place_footer {
-  height: 35px;
-  background-image: url('../images/logo_place_footer.svg');
 }
 
 .footer__author {

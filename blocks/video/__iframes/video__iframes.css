@@ -1,0 +1,7 @@
+.video__iframes {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: -50px;
+}
